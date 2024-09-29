@@ -1,0 +1,5 @@
+reservoirpy
+ipykernel
+neurodynex3
+torch
+snntorch
