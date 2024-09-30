@@ -128,7 +128,6 @@ def plot_results(results, param_sets):
                     - spikes (array-like): Boolean array indicating spike events.
     param_sets (dict): A dictionary where keys are labels and values are objects containing:
                        - v_threshold (float): Voltage threshold for spiking.
-                       - v_reset (float): Reset voltage after a spike.
                        
     Returns:
     None
@@ -194,7 +193,7 @@ def plot_results(results, param_sets):
                 label="Threshold",
             )
             axs[i, 1].axhline(
-                y=param_sets[label].v_reset, color="grey", linestyle="--", label="RP"
+                y=0.0, color="grey", linestyle="--", label="RP"
             )
             axs[i, 1].set_xlabel("Timesteps")
             axs[i, 1].set_ylabel("Membrane Potential")
